@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Noto+Serif+JP:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet"
+              href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+        <link rel="stylesheet" href="./assets/css/animate.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+    <body id="top">
+        <div class="p-loading">
+            <div class="c-hollow-dots-spinner" :style="spinnerStyle">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+
+        <header class="l-header">
+            <div class="l-header__inner">
+                <di class="l-header__logo">
+                    <a href="#" class="l-header__logo__link"><img src="./assets/img/portfolio-logo.png" alt="Portfolio"></a>
+                </di>
+                <div class="p-header-nav">
+                    <ul class="p-header-nav__lists">
+                        <li class="p-header-nav__list">
+                            <a href="" class="p-header-nav__link">HOME</a>
+                        </li>
+                        <li class="p-header-nav__list">
+                            <a href="" class="p-header-nav__link">WORKS</a>
+                        </li>
+                        <li class="p-header-nav__list">
+                            <a href="" class="p-header-nav__link">SKILLS</a>
+                        </li>
+                        <li class="p-header-nav__list">
+                            <a href="" class="p-header-nav__link">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <div class="p-parallax">
+            <video class="p-parallax__video" autoplay loop muted playsinline>
+                <source src="./assets/video/portfolio-leaf.mp4">
+            </video>
+        </div>
+
+        <div class="p-hamburger">
+            <div class="p-hamburger__inner">
+                <span class="p-hamburger__bar1"></span>
+                <span class="p-hamburger__bar2"></span>
+                <span class="p-hamburger__bar3"></span>
+            </div>
+        </div>
+
+        <div class="p-drawer">
+            <div class="p-drawer__inner">
+                <div class="p-drawer__logo">
+                    <a href=""><img src="./assets/img/portfolio-logo.png" alt="Portfolio"></a>
+                </div>
+                <ul class="p-drawer__lists">
+                    <li class="p-drawer__list">
+                        <a href="" class="p-drawer__link">HOME</a>
+                    </li>
+                    <li class="p-drawer__list">
+                        <a href="" class="p-drawer__link">WORKS</a>
+                    </li>
+                    <li class="p-drawer__list">
+                        <a href="" class="p-drawer__link">SKILLS</a>
+                    </li>
+                    <li class="p-drawer__list">
+                        <a href="" class="p-drawer__link">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="p-mv">
+            <h1 class="p-mv__title">Portfolio</h1>
+            <div class="c-scroll"><span>SCROLL</span></div>
+        </div>
+
+        <section class="p-about">
+            <div class="p-about__inner wow fadeInUp">
+                <h2 class="c-section-title p-about__title">ABOUT</h2>
+                <div class="p-about__wrapper">
+                    <div class="p-about__img"><img src="./assets/img/profile.png" alt=""></div>
+                    <div class="p-about__content">
+                        <div class="p-about-profile">
+                            <p class="p-about-profile__title">PROFILE</p>
+                            <p class="p-about-profile__text">
+                                男性、神奈川県在住。
+                                <br>趣味は猫を愛でる事、散歩、ゲーム、料理、動画鑑賞、音楽鑑賞、カラオケ、ストレッチなど。
+                                <br>作業やモノ作りが好きというところからWEB制作に興味を持ち、社会復帰を目指して勉強中です。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="p-works">
+            <div class="p-works__inner wow fadeInUp">
+                <h2 class="c-section-title p-works__title">WORKS</h2>
+                <div class="p-swiper">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <!-- Slides --> 
+                            <div class="swiper-slide">
+                                <div class="swiper-item">
+                                    <a href="" class="swiper-item__link">
+                                        <img src="./assets/img/site2.png">
+                                    </a>
+                                    <p class="p-swiper__title">トレーニングジムサイト<span>(静的サイト)</span></p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-item">
+                                    <a href="" class="swiper-item__link">
+                                        <img src="./assets/img/site3.png">
+                                    </a>
+                                    <p class="p-swiper__title">ゲームサイト<span>(静的サイト)</span></p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-item">
+                                    <a href="" class="swiper-item__link">
+                                        <img src="./assets/img/site1.png">
+                                    </a>
+                                    <p class="p-swiper__title">WEBデザイナー紹介サイト①<span>(静的サイト)</span></p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-item">
+                                    <a href="" class="swiper-item__link">
+                                        <img src="./assets/img/site4.png">
+                                    </a>
+                                    <p class="p-swiper__title">WEBデザイナー紹介サイト②<span>(WordPressオリジナルテーマ)</span></p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-item">
+                                    <a href="" class="swiper-item__link">
+                                        <img src="./assets/img/site5.png">
+                                    </a>
+                                    <p class="p-swiper__title">LP<span>(静的サイト)</span></p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-item">
+                                    <a href="" class="swiper-item__link">
+                                        <img src="./assets/img/site6.png">
+                                    </a>
+                                    <p class="p-swiper__title">ウェディングプランナー<span>(静的サイト)</span></p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-item">
+                                    <a href="" class="swiper-item__link">
+                                        <img src="./assets/img/site7.png">
+                                    </a>
+                                    <p class="p-swiper__title">カフェサイト<span>(WordPressオリジナルテーマ)</span></p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-item">
+                                    <a href="" class="swiper-item__link">
+                                        <img src="./assets/img/site8.png">
+                                    </a>
+                                    <p class="p-swiper__title">クリニックサイト<span>(WordPressオリジナルテーマ)</span></p>
+                                </div>
+                            </div>
+                        </div><!-- swiper-wrapper -->
+                    
+                        <div class="swiper-button-prev"><i class="fa-solid fa-angle-left"></i></div>
+                        <div class="swiper-button-next"><i class="fa-solid fa-angle-right"></i></div>
+                    
+                    </div><!-- swiper -->
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <div class="p-works__button">
+                    <a href="" class=" c-button learn-more">
+                        <span class="c-button__circle" aria-hidden="true">
+                        <span class="c-button__icon arrow"></span>
+                        </span>
+                        <span class="c-button__text">Learn More</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="p-skills">
+            <div class="l-inner p-skills__inner wow fadeInUp">
+                <div class="p-skills__wrapper">
+                    <div class="p-skills__textarea">
+                        <h2 class="c-section-title p-skills__title">SKILLS</h2>
+                        <div class="p-skills__button">
+                            <a href="" class=" c-button learn-more">
+                                <span class="c-button__circle" aria-hidden="true">
+                                <span class="c-button__icon arrow"></span>
+                                </span>
+                                <span class="c-button__text">Learn More</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-skills__content">
+                        <div class="p-skills-item">
+                            <a href="" class="p-skills-item__link">
+                                <div class="p-skills-item__img">
+                                    <img src="./assets/img/html-css.png" alt="HTML&CSS">
+                                </div>
+                                <div class="p-skills-item__textarea">
+                                    <p class="p-skills-item__title">HTML / CSS</p>
+                                    <p class="p-skills-item__text">
+                                        簡潔で分かりやすいコーディングを心がけています。
+                                    </p>
+                                </div>
+                                <span class="p-skills-item__arrow"></span>
+                            </a>
+                        </div>
+                        <div class="p-skills-item">
+                            <a href="" class="p-skills-item__link">
+                                <div class="p-skills-item__img">
+                                    <img src="./assets/img/js.png" alt="JavaScript&jQuery">
+                                </div>
+                                <div class="p-skills-item__textarea">
+                                    <p class="p-skills-item__title">JavaScript / jQuery</p>
+                                    <p class="p-skills-item__text">
+                                        SDNやアニメーションを使ってサイトの動きを豊かにします。
+                                    </p>
+                                </div>
+                                <span class="p-skills-item__arrow"></span>
+                            </a>
+                        </div>
+                        <div class="p-skills-item">
+                            <a href="" class="p-skills-item__link">
+                                <div class="p-skills-item__img">
+                                    <img src="./assets/img/wordpress.png" alt="WordPress">
+                                </div>
+                                <div class="p-skills-item__textarea">
+                                    <p class="p-skills-item__title">WordPress</p>
+                                    <p class="p-skills-item__text">オリジナルテーマ作成が可能です。</p>
+                                </div>
+                                <span class="p-skills-item__arrow"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-skills__button__sp">
+                    <a href="" class=" c-button learn-more">
+                        <span class="c-button__circle" aria-hidden="true">
+                        <span class="c-button__icon arrow"></span>
+                        </span>
+                        <span class="c-button__text">Learn More</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="p-contact">
+            <div class="p-contact__inner wow fadeInUp">
+                <h2 class="c-section-title p-contact__title">CONTACT</h2>
+                <p class="p-contact__text">
+                    ポートフォリオサイトをご覧いただきありがとうございます。
+                    <br>ご連絡は下のボタンより、リンク先のお問い合わせフォームをご利用ください。
+                </p>
+                <div class="p-contact__button">
+                    <a href="" class=" c-button learn-more">
+                        <span class="c-button__circle" aria-hidden="true">
+                        <span class="c-button__icon arrow"></span>
+                        </span>
+                        <span class="c-button__text">Learn More</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <div class="c-to-top">
+            <a href="#" class="c-to-top__link"><i class="fa-solid fa-angle-up"></i></a>
+        </div>
+
+        <footer class="l-footer">
+            <div class="l-footer__inner">
+                <div class="p-footer-sns">
+                    <div class="p-footer-sns__item">
+                        <a href="" class="p-footer-sns__link">
+                            <i class="fa-brands fa-square-twitter"></i>
+                        </a>
+                    </div>
+                    <div class="p-footer-sns__item">
+                        <a href="" class="p-footer-sns__link">
+                            <i class="fa-brands fa-square-facebook"></i>
+                        </a>
+                    </div>
+                    <div class="p-footer-sns__item">
+                        <a href="" class="p-footer-sns__link">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <p class="l-footer__copyright">&copy;2023 Portfolio</p>
+            </div>
+        </footer>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <script src="https://kit.fontawesome.com/230697b7eb.js" crossorigin="anonymous"></script>
+        <script src="./assets/js/wow.min.js"></script>
+        <script>new WOW().init();</script>
+        <script src="./assets/js/script.js"></script>
+    </body>
+</html>
