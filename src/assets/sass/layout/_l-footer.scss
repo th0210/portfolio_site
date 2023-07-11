@@ -1,0 +1,41 @@
+@use "../global" as global;
+
+.l-footer {
+    width: 100%;
+    padding: 50px 0 0 0;
+    background: transparent;
+    position: relative;
+    z-index: global.$header;
+
+    @include global.mq(tab) {
+        padding: 30px 0 0 0;
+    }
+
+    @include global.mq(sp) {
+        padding: 30px 0 0 0;
+    }
+}
+
+.l-footer__inner {
+}
+
+.l-footer__copyright {
+    font-size: 12px;
+    text-align: center;
+    background: global.$text-color1;
+    font-family: global.$ff-en;
+    letter-spacing: 0.05em;
+    color: global.$text-color2;
+    margin-top: 37px;
+    padding: 6px 0;
+
+    @include global.mq(tab) {
+        margin-top: 20px;
+    }
+
+    @include global.mq(sp) {
+        margin-top: 20px;
+        font-size: 14px;
+    }
+}
+

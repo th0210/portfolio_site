@@ -1,0 +1,144 @@
+@use "../global" as global;
+
+.p-works-page-item {
+    border-radius: 20px;
+    background: global.$text-color2;
+    padding: 20px 20px 30px 20px;
+    box-shadow: 2px 2px 8px #a9a9a9;
+    position: relative;
+
+    @include global.mq(tab) {
+        padding: 40px;
+    }
+
+    img {
+        width: 100%;
+        height: 260px;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: 0.3s ease;
+
+        @include global.mq(tab) {
+            height: 380px;
+        }
+
+        @include global.mq(sp) {
+            height: 210px;
+        }
+    }
+
+}
+
+.p-works-page-item__link {
+    position: relative;
+
+    &:hover {
+        .p-works-page-item__img {
+            &::before {
+                opacity: 1;
+                visibility: visible;
+                z-index: 100;
+            }
+
+            img {
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+
+.p-works-page-item__img {
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        background: rgb(0, 0, 0, 0.25);
+        transition: 0.3s ease;
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: global.$section;
+    }
+}
+
+.p-works-page-item__title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 24px;
+    text-align: center;
+
+    @include global.mq(tab) {
+        margin-top: 32px;
+    }
+
+    @include global.mq(sp) {
+        font-size: 18px;
+        margin-top: 18px;
+    }
+
+    span {
+        font-size: 14px;
+        font-weight: normal;
+        display: block;
+        margin-top: 10px;
+
+        @include global.mq(sp) {
+            margin-top: 8px;
+        }
+    }
+}
+
+.p-works-page-item__period {
+    margin-top: 40px;
+}
+
+.p-works-page-item__period__title,
+.p-works-page-item__learn__title,
+.p-works-page-item__hard__title {
+    font-weight: bold;
+    border-bottom: 2px solid global.$main-color2;
+    padding-bottom: 4px;
+    padding-left: 4px;
+    position: relative;
+
+    @include global.mq(sp) {
+        font-size: 14px;
+    }
+
+    &::before {
+        content: "";
+        width: 30%;
+        border-bottom: 2px solid#0B885B;
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+    }
+}
+
+.p-works-page-item__learn__title,
+.p-works-page-item__hard__title {
+    margin-top: 24px;
+
+    @include global.mq(sp) {
+        margin-top: 20px;
+    }
+}
+
+.p-works-page-item__period__text,
+.p-works-page-item__learn__text,
+.p-works-page-item__hard__text {
+    line-height: 1.4;
+    margin-top: 4px;
+    padding-left: 4px;
+
+    @include global.mq(sp) {
+        font-size: 14px;
+    }
+}
