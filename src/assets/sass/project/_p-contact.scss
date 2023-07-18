@@ -1,0 +1,44 @@
+@use "../global" as global;
+
+.p-contact{
+    padding: 100px 0 170px 0;
+    background: linear-gradient(-60deg, global.$sub-color 0%,
+    global.$sub-color 30%, global.$text-color2 30%, global.$text-color2 70%,global.$sub-color 70%,);
+    position: relative;
+    z-index: global.$section;
+    overflow: hidden;
+    position: relative;
+
+    @include global.mq(tab) {
+        padding: 100px 20px 130px 20px;
+        background: linear-gradient(-60deg, global.$sub-color 0%,
+        global.$sub-color 25%, global.$text-color2 25%, global.$text-color2 75%,global.$sub-color 75%,);
+    }
+
+    @include global.mq(sp) {
+        padding: 130px 20px;
+        background: linear-gradient(-60deg, global.$sub-color 0%,
+        global.$sub-color 25%, global.$text-color2 25%, global.$text-color2 75%,global.$sub-color 75%,);
+    }
+
+}
+
+.p-contact__inner {
+    max-width: 690px;
+    margin: 0 auto;
+}
+
+.p-contact__title {
+    text-align: center;
+}
+
+.p-contact__text {
+    text-align: center;
+    margin-top: 40px;
+    line-height: 1.6;
+}
+
+.p-contact__button {
+    text-align: center;
+    margin-top: 60px;
+}

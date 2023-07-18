@@ -1,0 +1,60 @@
+@use "../global" as global;
+
+.p-contact-page{
+    padding: 100px 0 170px 0;
+    background: linear-gradient(-60deg, global.$sub-color 0%,
+    global.$sub-color 30%, global.$text-color2 30%, global.$text-color2 70%,global.$sub-color 70%,);
+    /*background: linear-gradient(to right, global.$text-color2 0%, global.$text-color2 50%, global.$sub-color 50%,);*/
+    position: relative;
+    z-index: global.$section;
+    overflow: hidden;
+    position: relative;
+
+    @include global.mq(tab) {
+        padding: 100px 20px 130px 20px;
+        background: linear-gradient(-60deg, global.$sub-color 0%,
+        global.$sub-color 25%, global.$text-color2 25%, global.$text-color2 75%,global.$sub-color 75%,);
+    }
+
+    @include global.mq(sp) {
+        padding: 130px 20px;
+        background: linear-gradient(-60deg, global.$sub-color 0%,
+        global.$sub-color 25%, global.$text-color2 25%, global.$text-color2 75%,global.$sub-color 75%,);
+    }
+
+}
+
+.p-contact-page__inner {
+    max-width: 688px;
+    margin: 0 auto;
+    margin-top: 130px;
+
+    @include global.mq(tab) {
+        max-width: 580px;
+    }
+}
+
+.p-contact-page__message {
+    text-align: center;
+    line-height: 1.4;
+
+    span {
+        color: global.$accent-color;
+        display: inline-block;
+    }
+}
+
+.p-contact__title {
+    text-align: center;
+}
+
+.p-contact__text {
+    text-align: center;
+    margin-top: 40px;
+    line-height: 1.6;
+}
+
+.p-contact__button {
+    text-align: center;
+    margin-top: 60px;
+}

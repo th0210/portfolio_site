@@ -1,0 +1,33 @@
+@use "../global" as global;
+
+.p-breadcrumb {
+    font-size: 14px;
+    background: global.$text-color2;
+    padding: 10px 60px;
+    position: relative;
+    z-index: global.$section;
+
+    @include global.mq(tab) {
+      padding: 10px 30px;
+    }
+
+    @include global.mq(sp) {
+        padding: 10px 20px;
+        font-size: 12px;
+      }
+}
+
+.p-breadcrumb__inner {
+    & > span {
+      display: inline-block;
+      padding: 0 8px;
+
+      &:first-child {
+        padding-left: 0;
+      }
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+}

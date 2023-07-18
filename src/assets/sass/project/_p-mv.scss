@@ -1,0 +1,49 @@
+@use "../global" as global;
+
+.p-mv {
+    height: calc(100vh - 60px);
+    position: relative;
+    z-index: global.$section;
+
+    &.sub-page {
+        height: calc(500px - 60px);
+
+        @include global.mq(sp) {
+            height: calc(300px - 50px);
+        }
+    }
+}
+
+.p-mv__title {
+    text-align: center;
+    font-size: 122px;
+    letter-spacing: 0.08em;
+    font-family: global.$ff-en;
+    color: global.$text-color2;
+    position: absolute;
+    top: calc(50% - 60px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @include global.mq(tab) {
+        font-size: 80px;
+    }
+
+    @include global.mq(sp) {
+        font-size: 42px;
+        top: calc(50% - 50px);
+    }
+
+    &.sub-page {
+        font-size: 100px;
+
+        @include global.mq(tab) {
+            font-size: 80px;
+        }
+
+        @include global.mq(sp) {
+            font-size: 42px;
+            top: calc(50% - 50px);
+        }
+    }
+}

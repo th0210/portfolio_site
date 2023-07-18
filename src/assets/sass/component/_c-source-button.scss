@@ -1,0 +1,33 @@
+@use "../global" as global;
+
+.c-source-button {
+    font-size: 14px;
+    color: global.$text-color2;
+    padding: 6px 32px 6px 12px;
+    display: inline-block;
+    background: #a9a9a9;
+    border-radius: 3px;
+    transition: 0.3s;
+    position: relative;
+
+    @include global.mq(sp) {
+        padding: 4px 26px 4px 8px;
+    }
+
+    i {
+        font-size: 10px;
+        position: absolute;
+        top: 50%;
+        right: 12px;
+        transform: translateY(-50%);
+        transition: 0.3s;
+    }
+
+    &:hover {
+        background: #808080;
+
+        i {
+            right: 8px;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+@use "../global" as global;
+
+body {
+    font-size: 16px;
+    color: global.$text-color1;
+    line-height: 1;
+    font-family: global.$ff-jp;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    height: auto;
+    display: block;
+}
+
+li {
+    list-style: none;
+}

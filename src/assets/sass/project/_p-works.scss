@@ -1,0 +1,39 @@
+@use "../global" as global;
+
+.p-works{
+    padding: 110px 0 110px 0;
+    background: linear-gradient(-60deg,
+    global.$sub-color 0%, global.$sub-color 30%,
+    global.$text-color2 30%, global.$text-color2 50%,
+    global.$sub-color 50%, global.$sub-color 52%,
+    global.$text-color2 52%, global.$text-color2 53%,
+    global.$sub-color 53%);
+    position: relative;
+    z-index: global.$section;
+
+    @include global.mq(tab) {
+        padding: 110px 20px;
+    }
+
+    @include global.mq(sp) {
+        padding: 130px 30px;
+    }
+}
+
+.p-works__inner {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.p-works__title {
+    text-align: center;
+}
+
+.p-works__button {
+    text-align: center;
+    margin-top: 70px + 40px;
+
+    @include global.mq(sp) {
+        margin-top: 60px;
+    }
+}

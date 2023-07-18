@@ -1,0 +1,70 @@
+@use "../global" as global;
+
+.p-skills{
+    padding: 160px 0;
+    background: global.$text-color2;
+    position: relative;
+    z-index: global.$section;
+
+    @include global.mq(sp) {
+        padding: 130px 20px;
+    }
+}
+
+.p-skills__wrapper {
+    display: flex;
+    row-gap: 30px;
+
+    @include global.mq(tab) {
+        justify-content: center;
+        row-gap: 40px;
+    }
+
+    @include global.mq(sp) {
+        display: block;
+        row-gap: 50px;
+    }
+}
+
+.p-skills__textarea {
+    padding: 150px 100px 0 100px;
+    background: global.$sub-color;
+
+    @include global.mq(tab) {
+        padding: 150px 20px 0 20px;
+    }
+
+    @include global.mq(sp) {
+        padding: 0;
+        background: none;
+    }
+}
+
+.p-skills__content {
+    @include global.mq(sp) {
+        margin-top: 60px;
+    }
+}
+
+.p-skills__title {
+    text-align: center;
+}
+
+.p-skills__button {
+    text-align: center;
+    margin-top: 40px;
+
+    @include global.mq(sp) {
+        display: none;
+    }
+}
+
+.p-skills__button__sp {
+    text-align: center;
+    margin-top: 60px;
+    display: none;
+
+    @include global.mq(sp) {
+        display: block;
+    }
+}
